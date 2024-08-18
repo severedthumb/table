@@ -4,7 +4,6 @@
 
 body {
     background-color: rgb(30, 60, 90);
-
     margin: 0;
     padding: 0;
 }
@@ -18,11 +17,24 @@ h1 {
     font-size: 2vw;
 }
 
+h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+h3 {
+
+    font-size: 1vw;
+}
+
 
 
 /* THIS IS THE 'SELECT A PC' PART, which disappears after you select a PC*/
-
-#selector {
+.selector {
     display: block;
     text-align: center;
     width: 75%;
@@ -32,7 +44,6 @@ h1 {
 
 
 /* THIS IS THE PC INFO, which appears after you select a PC */
-
 .player {
     width: 75%;
     margin: 0 auto;
@@ -51,10 +62,22 @@ h1 {
     padding: 2vw;
 }
 
-h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 2vw;
+.hp_box {
+    width: 6vw;
+    height: 6vw;
+    border: 1px solid navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hp_box span {
+    font-size: 1vw;
+}
+
+#currentHP, #maxHP {
+    font-size: 3vw;
 }
 
 
