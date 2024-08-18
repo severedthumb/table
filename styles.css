@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(30, 60, 90);
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(249, 252, 255);
+    font-size: 2vw;
+}
+
+
+
+/* THIS IS THE 'SELECT A PC' PART, which disappears after you select a PC*/
+
+#selector {
+    display: block;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+
+/* THIS IS THE PC INFO, which appears after you select a PC */
+
+.player {
+    width: 75%;
+    margin: 0 auto;
+    
+    display: none;
+    align-items: stretch;
+}
+
+.headshot {
+    width: 50%;
+}
+
+.box {
+    background-color: white;
+    width: 50%;
+    padding: 2vw;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+
+
+
+
