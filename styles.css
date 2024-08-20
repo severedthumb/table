@@ -1,9 +1,14 @@
+:root {
+    --main-bg-color: rgb(30, 60, 90);
+    --main-fg-color: rgb(249, 252, 255);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(30, 60, 90);
+    background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
 }
@@ -13,11 +18,12 @@ header {
 }
 
 h1 {
-    color: rgb(249, 252, 255);
+    color: var(--main-fg-color);
     font-size: 2vw;
 }
 
 h2, h3 {
+    color: var(--main-fg-color);
     margin: 0;
     padding: 0;
 }
@@ -27,7 +33,6 @@ h2 {
 }
 
 h3 {
-
     font-size: 1vw;
 }
 
@@ -45,9 +50,8 @@ h3 {
 
 /* THIS IS THE PC INFO, which appears after you select a PC */
 .player {
-    width: 75%;
+    width: 72%;
     margin: 0 auto;
-    
     display: none;
     align-items: stretch;
 }
@@ -57,30 +61,58 @@ h3 {
 }
 
 .box {
-    background-color: white;
     width: 50%;
     padding: 2vw;
+    border: thick var(--main-fg-color);
+    border-style: double double double none;
+}
+
+
+
+/* HP */
+
+.hp_container {}    /* This contains the two HP boxes, to keep them side-by-side */
+
+.currentHP_container, .maxHP_container {
+    display: inline-block;
 }
 
 .hp_box {
     width: 6vw;
     height: 6vw;
-    border: 1px solid navy;
+    border: 2px solid var(--main-fg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.hp_box span {
-    font-size: 1vw;
-}
-
 #currentHP, #maxHP {
-    font-size: 3vw;
+    font-size: 3vw;        /* This text is the number displayed */
+    color: var(--main-fg-color);
 }
 
+.hp_box span {
+    font-size: 1vw;        /* This text is the label displayed, e.g. 'max' */
+    color: var(--main-fg-color);
+}
 
+.currentHP_buttons, .maxHP_buttons {
+    font-size: 0;
+}
+
+.currentHP_up, .currentHP_down, .maxHP_up, .maxHP_down {
+    /* display: inline-block;       this is what it should be if not flex */
+    background-color: var(--main-fg-color);
+    width: 3vw;
+    height: 3vw;
+    font-size: 1vw;
+    color: var(--main-bg-color);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

@@ -56,6 +56,7 @@ fillInfoBox = (character) => {
     headshot.setAttribute('src', character.headshot);
     test.innerHTML = character.name;
     test2.innerHTML = character.race + ' ' + character.class;
+
     currentHP.innerHTML = character.currentHP;
     maxHP.innerHTML = character.maxHP;
 
