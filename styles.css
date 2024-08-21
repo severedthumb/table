@@ -114,5 +114,7 @@ h3 {
     align-items: center;
 }
 
-
+.caret {
+    width: 1.5vw;
+}
 
